@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Form</title>
+  <link rel="stylesheet" href="percentage.css">
+</head>
+
+<body>
+  <h2>Student Form</h2>
+  <form id="studentForm">
+    <table>
+      <tr>
+        <td>
+          <label>name</label>
+        </td>
+        <td><input type="text" id="name"></td>
+      </tr>
+      <tr>
+        <td>
+          <label>class</label>
+        </td>
+        <td><input type="text" id="class"></td>
+      </tr>
+      <tr>
+        <td>
+          <label>english</label>
+        </td>
+        <td><input type="text" id="english"></td>
+      </tr>
+      <tr>
+        <td>
+          <label>hindi</label>
+        </td>
+        <td><input type="text" id="hindi"></td>
+      </tr>
+      <tr>
+        <td>
+          <label>math</label>
+        </td>
+        <td><input type="math" id="math"></td>
+      </tr>
+      <tr>
+        <td>
+          <label>science</label>
+        </td>
+        <td><input type="text" id="science"></td>
+      </tr>
+      <tr>
+        <td>
+          <label>sanskrit</label>
+        </td>
+        <td><input type="text" id="sanskrit"></td>
+      </tr>
+    </table>
+    <div class="button">
+      <div class="marks calcuator">
+    <button type="button" onclick="marksCalculator()">Submit</button>
+    </div>
+    <div class="reset">
+    <button type="reset">Reset</button>
+    </div>
+    </div>
+  </form>
+
+  <h3>Results</h3>
+  <div class="subtotal">
+  <td><label>Total Marks:</label></td>
+  <td><input type="text" id="total" readonly></td>
+  <td><label>Percentage:</label></td>
+  <td><input type="text" id="percentage" readonly></td>
+  <td><label>Division:</label></td>
+  <td><input type="text" id="division" readonly></td>
+  </div>
+  <script>
+    function marksCalculator() {
+      const english = parseFloat(document.getElementById('english').value) || 0;
+      const hindi = parseFloat(document.getElementById('hindi').value) || 0;
+      const math = parseFloat(document.getElementById('math').value) || 0;
+      
+      const science = parseFloat(document.getElementById('science').value) || 0;
+      const sanskrit = parseFloat(document.getElementById('sanskrit').value) || 0;
+
+      const total = english + hindi + math + science + sanskrit;
+      const percentage = (total / 500) * 100;
+
+      let division = '';
+      if (percentage >= 60) {
+        division = 'First';
+      } else if (percentage >= 45) {
+        division = 'Second';
+      } else if (percentage >= 33) {
+        division = 'Third';
+      } else {
+        division = 'Fail';
+      }
+
+      document.getElementById('total').value = total;
+      document.getElementById('percentage').value = percentage.toFixed(2) + '%';
+      document.getElementById('division').value = division;
+    }
+  let today = new Date();
+  console.log(today);
+  // math methods
+  console.log(Math.ceil(45.3));
+  console.log(Math.floor(45.8));
+  console.log(Math.round(99.5));
+    </script>
+</body>
+
+</html>

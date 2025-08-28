@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label>Roll Number</label>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </form>
+    <script>
+
+        let todos = [
+            {
+                "userId": 1,
+                "id": 1,
+                "title": "delectus aut autem",
+                "completed": false
+            },
+            {
+                "userId": 1,
+                "id": 2,
+                "title": "quis ut nam facilis et officia qui",
+                "completed": false
+            }
+        ];
+
+        let json_todos = JSON.stringify(todos);
+        localStorage.setItem('todos',json_todos);
+
+        //array methods
+        let students = ["harsh", "sachin", "rajesh", 30, "apple", "mango"]
+
+        students.push("sourav");
+        students.push("sumit");
+        students.pop("1");
+        students.shift("1");
+
+        localStorage.setItem("id", 584)
+        document.write("name", "harsh")
+        localStorage.setItem("class", "12th")
+        document.write("class", "12th")
+
+        localStorage.setItem("id", 643654375)
+        sessionStorage.setItem("id", 586)
+        sessionStorage.setItem("name", "harsh")
+        document.write("city", "kangra")
+        localStorage.setItem("state", "himachalPradesh")
+        sessionStorage.setItem("pin_code", 176001)
+        localStorage.setItem("city", "kangra")
+        document.cookie = "harsh=atwal";
+        let harsh1 = 1;
+        let harsh2 = 100;
+        console.log(harsh1 + harsh2);
+        localStorage.setItem("address", "yol");
+        localStorage.removeItem("address")
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form>
+    <div>
+        <label>studentName</label>
+        <div><input type="text" id="studentName"></div>
+    </div>
+        <div>
+        <label>rollNo</label>
+        <div><input type="text" id="rollNo"></div>
+    </div>
+      <div>
+        <label>address</label>
+        <div><input type="text" id="address"></div>
+    </div>
+      <div>
+        <label>pinCode</label>
+        <div><input type="text" id="pinCode"></div>
+    </div>
+    <div>
+        <input type="button" value="save" onclick="saveData()"/>
+    </div>
+    
+ </form>
+ <script>
+   
+    let studentsRecord =[];
+    function saveData(){
+            let name = document.querySelector('#studentName').value;
+            let address = document.querySelector('#address').value;
+            let pinCode = document.querySelector('#pinCode').value;
+            let rollNo = document.querySelector('#rollNo').value;
+            
+           
+
+            let data = {
+                "rollNo":rollNo,
+                "name":document.querySelector('#studentName').value,
+                "address":address,
+                "pin_code":pinCode
+                           
+            }
+                          
+            
+
+             studentsRecord.push(data);
+
+            localStorage.setItem('studentsRecord',JSON.stringify(studentsRecord));
+             
+
+           }
+         
+        
+       
+ </script>
+</body>
+</html>

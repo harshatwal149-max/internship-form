@@ -1,0 +1,4 @@
+There are three types of storing data 
+1. cookie
+2. session storage
+3. local storage

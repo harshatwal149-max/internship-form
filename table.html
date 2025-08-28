@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label>id</label>
+            <div>
+                <input type="text" id="id">
+            </div>
+        </div>
+        <div>
+            <label>name</label>
+            <div>
+                <input type="text" id="name">
+            </div>
+        </div>
+        <div>
+            <label>roll_no</label>
+            <div>
+                <input type="text" id="roll_no">
+            </div>
+        </div>
+        <div>
+            <label>address</label>
+            <div>
+                <input type="text" id="address">
+            </div>
+        </div>
+        <div>
+            <label>city</label>
+            <div>
+                <input type="text" id="city">
+            </div>
+        </div>
+        <div>
+            <label>pin_code</label>
+            <div>
+                <input type="text" id="pin_code">
+            </div>
+        </div>
+
+        <div>
+            <input type="button" value="save" onclick="saveData()" />
+        </div>
+    </form>
+    <script>
+        let students = [];
+
+        function saveData(){
+            let name = document.getElementById('name').value;
+            let address = document.getElementById('address').value;
+            let pin_code = document.getElementById('pin_code').value;
+            let roll_no = document.getElementById('roll_no').value;
+            let city = document.getElementById('city').value;
+
+            
+
+            let data = {
+                "roll_no":roll_no,
+                "name":name,
+                "address":address,
+                "pin_code":pin_code,
+                "city":city                
+            }
+
+            students.push(data);
+
+            localStorage.setItem('student',JSON.stringify(students));
+
+            clearAllFields();
+
+        }
+
+
+        function clearAllFields(){
+            document.getElementById('id').value = '';
+            document.getElementById('name').value = '';
+          document.getElementById('address').value = '';
+           document.getElementById('pin_code').value = '';
+           document.getElementById('roll_no').value = '';
+          document.getElementById('city').value = '';
+        }
+    </script>
+</body>
+
+</html>

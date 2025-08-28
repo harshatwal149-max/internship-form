@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="identity">
+        <div class="logo">
+            <img src="https://thedigitalcoders.com/uploads/all/thedigalcoder.png">
+        </div>
+        <div class="photo">
+            <i class="fa-solid fa-person"></i>
+            <p>Paste Photograph</p>
+        </div>
+    </div>
+    <div class="menu">
+        <li>
+            <ul>
+                <li><i class="fa-solid fa-globe"></i>www.digitalcoders.com</li>
+                <li><i class="fa-solid fa-envelope"></i>info@thedigitalcoders.com</li>
+                <li><i class="fa-solid fa-phone"></i>98888-09222</li>
+            </ul>
+        </li>
+    </div>
+    <div class="internshipform">
+        <h2>INTERNSHIP FORM</h2>
+    </div>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Full Name <span class="required">*</span></label>
+                <td><input type="text" id="full_name" i required></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Father Name <span class="required">*</span> </label>
+                </td>
+                <td><input type="text" id="father_name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Full Address <span class="required">*</span></label>
+                </td>
+                <td><input type="text" id="full_address"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address 2</label>
+                </td>
+                <td><input type="text" id="Address 2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label> Status</label>
+                </td>
+                <td>
+                    <select name="status">
+                        <option value="active">Active</option>
+                        <option value="inactive">InActive</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender <span class="required">*</span></label>
+                </td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Religion <span class="required">*</span></label>
+                </td>
+                <td>
+                    <input type="radio" name="religion" id="hindu">Hindu
+                    <input type="radio" name="religion" id="muslim">Muslim
+                    <input type="radio" name="religion" id="christian">Christian
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Phone No <span class="required">*</span></label>
+                <td><input type="text" id="Phone No:"></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>E-mail <span class="required">*</span></label>
+                <td><input type="email" id="email"></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Qualification <span class="required">*</span></label>
+                </td>
+                <td>
+                    <input type="checkbox" name="qualification" value="10th">10th
+                    <input type="checkbox" name="qualification" value="12th">12th
+                    <input type="checkbox" name="qualification" value="graudation">Graduation
+                    <input type="checkbox" name="qualification" value="postgraduation">Post Graduation
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Emergency No</label>
+                <td><input type="text" id="Emergency No"></td>
+                </td>
+            </tr>
+        </table>
+
+        <div class="internshipform2">
+            <h2>COURSE DETAILS-ALREADY LEARN</h2>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <label>Course Name <span class="required">*</span></label>
+                </td>
+                <td><input type="text" id="Course Name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Course Duration <span class="required">*</span></label>
+                </td>
+                <td><input type="text" id="Course Duration"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Year <span class="required">*</span></label>
+                </td>
+                <td><input type="text" id="Year"></td>
+            </tr>
+        </table>
+        <div class="paragraph sign">
+            <div class="paragraph">
+                <p>I hereby declare that the information furnished above is true, complete and correct to the best of my
+                    knowledge and belief.</p>
+            </div>
+            <div class="sign">
+                <h3>Signature<br>signature of applicant</h3>
+            </div>
+        </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="submit" class="submit">
+        </div>
+    </form>
+
+    <script>
+
+        let name = prompt("Enter Your name");
+        let age = prompt("Enter you age");
+        if(name=="harsh" && age>18){
+            alert('Welcome! You are invited');
+        }else{
+            alert("Sorry! You are not invited");
+        } function test(){
+            let name="sachin";
+            let age = 15;
+
+            if(name=="sachin" && age>18){
+                alert("can vote");
+            }else{
+
+       
+                alert("Sorry");
+            }
+        }
+        let harsh = new Date();
+        console.log(harsh);
+        document.querySelector(".submit").addEventListener("click", function (e) {
+
+            e.preventDefault();
+            
+            // console.log(document.getElementById('hindu').checked);
+            // console.log(document.querySelector("#hindu").checked);
+            // console.log(document.querySelector("#muslim").checked);
+            // console.log(document.querySelector("#christian").checked);
+            
+            if(!document.querySelector("#hindu").checked && !document.querySelector("#muslim").checke            return;
+
+                alert("please select relgion");
+                return;
+            }
+
+            const fields = [
+                "Full Name",
+                "Father Name",
+                "Full Address",
+                "Address 2",
+                "Status",
+                "Nationality",
+                "Phone No:",
+                "E-mail",
+                "Qualification",
+                "Emergency No",
+                "Course Name",
+                "Course Duration",
+                "Year"
+            ];
+
+            let full_name = document.getElementById('full_name').value;
+            let father_name = document.getElementById('father_name').value;
+            let full_address = document.getElementById('full_address').value;
+
+            isEmpty(document.getElementById('full_name'),"please enter full name");
+            isEmpty(document.getElementById('father_name'),"please enter Father name");
+            isEmpty(document.getElementById('full_address'),"please enter Address");
+
+
+            
+            // if(full_name.length == 0){
+            //     alert('please enter Full Name');
+            //     return;
+            // }else if(father_name.length == 0){
+            //     alert('Please enter Father name');
+            //     return;
+            // }else if(full_address.length == 0){
+            //     alert('Please enter address');
+            //     return;
+            // }
+
+
+            const formData = {};
+            fields.forEach(id => {
+                const input = document.getElementById(id);
+                if (input) {
+                    formData[id] = input.value.trim();
+                }
+            });
+
+            localStorage.setItem("internshipFormData", JSON.stringify(formData));
+            alert(" submitted successfully!");
+        });
+
+
+        function isEmpty(elem,msg){
+            if(elem.value.length==0){
+                alert(msg);
+                exit;
+            }
+        }
+     
+      
+
+    </script>
+</body>
+
+</html>

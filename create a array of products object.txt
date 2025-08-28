@@ -1,0 +1,8 @@
+create a array of products object
+
+
+id
+product name
+product price
+product discount price
+quantity

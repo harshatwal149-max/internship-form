@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+    h2 {
+    text-align: center;
+}
+h2 {
+    border: 3px solid red;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 40px;
+    font-size: -webkit-xxx-large;
+    border-radius: 60px;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+}
+table {
+    padding-top: 30px;
+    margin-left: 560px;
+    border: 1px solid;
+}
+label {
+    font-size: xxx-large;
+}
+input#name {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px
+}
+input#class {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px
+}
+input#name {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px
+}
+input#english {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px
+}
+input#hindi {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px
+}
+input#math {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px
+}
+input#science {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px
+}
+input#sanskrit {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px
+}
+label {
+    margin-left: 10px;
+}
+table {
+    padding-top: 30px;
+    margin-left: 560px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: deepskyblue;
+    color: yellow;
+    font-style: unset;
+}
+.button {
+    display: flex;
+    margin-left: 650px;
+    justify-content: flex-start;
+    padding-top: 10px;
+    gap: 30px;
+}
+button {
+    height: 60px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 70px;
+}
+h3 {
+    margin-left: 664px;
+    font-size: xxx-large;
+    padding-top: 10px;
+    color: purple;
+    text-transform: uppercase;
+}
+input#total {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+input#percentage {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+input#division{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.subtotal {
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
